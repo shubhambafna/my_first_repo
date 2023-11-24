@@ -1,0 +1,9 @@
+{
+	"name": "shubham-df",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d921aa57-6700-4b1d-9199-dcdb4e121cb5",
+		"tenantId": "cff49603-ab19-4210-a295-e4feed3eb7c6"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"name": "AzureSqlDB",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=mydbproject1.database.windows.net;Initial Catalog=mydb;User ID=shubh",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "vehicle_df",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "AZURE-SQL-DB-Password"
+			}
+		}
+	}
+}

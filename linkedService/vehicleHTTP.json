@@ -1,0 +1,13 @@
+{
+	"name": "vehicleHTTP",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/shubhambafna/my_first_repo/project1-smart-vehicle/Customer_Valid.json",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}

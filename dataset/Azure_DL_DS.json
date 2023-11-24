@@ -1,0 +1,29 @@
+{
+	"name": "Azure_DL_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"LandingFolder": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Customer.json",
+				"folderPath": {
+					"value": "@dataset().LandingFolder",
+					"type": "Expression"
+				},
+				"fileSystem": "landing"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

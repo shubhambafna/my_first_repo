@@ -1,0 +1,19 @@
+{
+	"name": "ADLS_File",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "staging"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
