@@ -80,6 +80,7 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
+				"userProperties": [],
 				"typeProperties": {
 					"url": "https://shubh1.azurewebsites.net",
 					"method": "POST",
